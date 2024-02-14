@@ -6,10 +6,10 @@
     box-sizing: border-box;
   }
 
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
+body {
+  font-family: Arial;
+  margin: 0;
+}
 
 .header {
   padding: 60px;
@@ -20,6 +20,22 @@
 
 .main {
   text-align: center;
+}
+
+.project-container {
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.skill-container {
+  flex-wrap: nowrap;
+  background: #1abc5c;
+}
+
+.autobiography-container {
+  flex-wrap: nowrap;
+  background: #1abc9c;
 }
 
 .flex-container {
@@ -46,19 +62,25 @@
 </div>
 
 <div class = "main">
-  <h2>Featured Photo</h2>
+  <h2>Featured Photo - John Miles Ramos</h2>
+  <img src="/home/user/Mairu13.github.io/JavaLogo.png" style="width:50%">
+
+<div class = "project-container">
+  <h3>Previous Projects</h3>
   <img src="/home/user/Mairu13.github.io/PartyCatch.png" style="width:50%">
+  <div class="flex-item" style="height:60px;">Image</div><br>
+  <div class="flex-item" style="height:60px;">Image</div><br>
+  <div class="flex-item" style="height:60px;">Image</div><br>
+  <div class="flex-item" style="height:60px;">Image</div>
 
-
-<div class="flex-container">
+<div class="skill-container">
+  <h4>Skills</h4>
   <div class ="flex-item" style="flex: 3; order: 3;">1</div>
-  <div class ="flex-item" style="flex: 3; order: 3;">2</div>
-  <div class ="flex-item" style="flex: 3; order: 3;">3</div>  
-  <div class ="flex-item" style="flex: 3; order: 3;">4</div>
-  <div class ="flex-item" style="flex: 3; order: 3;">5</div>
-  <div class ="flex-item" style="flex: 3; order: 3;">6</div>  
-  <div class ="flex-item" style="flex: 3; order: 3;">7</div>
-  <div class ="flex-item" style="flex: 3; order: 3;">8</div>
+</div>
+
+<div class="autobiography-container">.
+  <h5>Autobiography</h5>
+  <div class ="flex-item" style="flex: 3; order: 3;">1</div>
 </div>
 
 <p>Footer Contents</p>
