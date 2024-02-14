@@ -1,92 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-  {
-    box-sizing: border-box;
-  }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: Arial;
-  margin: 0;
-}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
 
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-}
+    .header {
+      padding: 60px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+    }
 
-.main {
-  text-align: center;
-}
+    .main {
+      text-align: center;
+      padding: 20px;
+    }
 
-.project-container {
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-content: flex-start;
-}
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
 
-.skill-container {
-  flex-wrap: nowrap;
-  background: #1abc5c;
-}
+    .project-item {
+      flex: 0 0 calc(25% - 20px);
+      margin: 10px;
+      overflow: hidden;
+      position: relative;
+      border: 2px solid #1abc9c;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.autobiography-container {
-  flex-wrap: nowrap;
-  background: #1abc9c;
-}
+    .project-item img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #1abc9c;
+    }
 
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: DodgerBlue;
-  flex-direction: row;
-  align-content: flex-start;
-}
+    .skill-container,
+    .autobiography-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 20px;
+    }
 
-.flex-item {
-  border-style: solid;
-  border-width: 2px;
-  border-color: red;
-}
+    .flex-item {
+      flex: 1;
+      border: 2px solid red;
+      margin: 10px;
+      padding: 10px;
+    }
 
-</style>
+    .footer-container {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
 
-<! -- Header -->
-<div class = "header">
+<!-- Header -->
+<div class="header">
   <h1>Logo and Navigation Bar</h1>
 </div>
 
-<div class = "main">
+<!-- Main Content -->
+<div class="main">
   <h2>Featured Photo - John Miles Ramos</h2>
-  <img src="/home/user/Mairu13.github.io/JavaLogo.png" style="width:50%">
+  <img src="JavaLogo.png" style="width:50%" alt="Featured Photo">
 
-<div class = "project-container">
-  <h3>Previous Projects</h3>
-  <img src="/home/user/Mairu13.github.io/PartyCatch.png" style="width:50%">
-  <div class="flex-item" style="height:60px;">Image</div><br>
-  <div class="flex-item" style="height:60px;">Image</div><br>
-  <div class="flex-item" style="height:60px;">Image</div><br>
-  <div class="flex-item" style="height:60px;">Image</div>
+  <!-- Previous Projects -->
+  <div class="project-container">
+    <h3>Previous Projects</h3>
+    <div class="project-item"><img src="PartyCatch.png" style="width:100%" alt="Project 1"></div>
+    <div class="project-item"><img src="Project2.png" style="width:100%" alt="Project 2"></div>
+    <div class="project-item"><img src="Project3.png" style="width:100%" alt="Project 3"></div>
+    <div class="project-item"><img src="Project4.png" style="width:100%" alt="Project 4"></div>
+  </div>
 
-<div class="skill-container">
-  <h4>Skills</h4>
-  <div class ="flex-item" style="flex: 3; order: 3;">1</div>
+  <!-- Skills -->
+  <div class="skill-container">
+    <h4>Skills</h4>
+    <div class="flex-item">1</div>
+  </div>
+
+  <!-- Autobiography -->
+  <div class="autobiography-container">
+    <h5>Autobiography</h5>
+    <div class="flex-item">1</div>
+  </div>
 </div>
 
-<div class="autobiography-container">.
-  <h5>Autobiography</h5>
-  <div class ="flex-item" style="flex: 3; order: 3;">1</div>
+<!-- Footer -->
+<div class="footer-container">
+  <p>Footer Contents</p>
+  <p>Logo, Address / Contact Information, and Personal Website</p>
+  <p>Copyright Information</p>
+  <p><strong>Back to Top</strong></p>
 </div>
-
-<p>Footer Contents</p>
-<p>Logo, Address / Contact Information, and Personal Website</p>
-<p>Copyright Information</p>
-<p><strong>Back to Top</strong></p>
 
 </body>
 </html>
