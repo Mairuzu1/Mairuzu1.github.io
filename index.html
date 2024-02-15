@@ -1,3 +1,10 @@
+<!-- 
+John Miles Ramos
+CMSC 100 U5L
+
+A single-page static website portfolio made with HTML and CSS.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +28,7 @@
     .main {
       text-align: center;
       padding: 20px;
+      background-color: #F5F5F5;
     }
 
     .project-container {
@@ -38,12 +46,23 @@
       border: 2px solid #1abc9c;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .project-item img {
       width: 100%;
       height: auto;
       border-bottom: 2px solid #1abc9c;
+    }
+
+    .subtitle{
+      padding: 8px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
     }
 
     .skill-container,
@@ -56,7 +75,7 @@
     }
 
     .flex-item {
-      flex: 1;
+      flex: 0 0 100%;
       border: 2px solid red;
       margin: 10px;
       padding: 10px;
@@ -70,46 +89,72 @@
     }
   </style>
 </head>
+
+<!-- Portfolio content start -->
 <body>
+  <div id="navbar">
 
 <!-- Header -->
 <div class="header">
-  <h1>Logo and Navigation Bar</h1>
+  <h1>Static Website Portfolio</h1>
 </div>
 
 <!-- Main Content -->
 <div class="main">
-  <h2>Featured Photo - John Miles Ramos</h2>
-  <img src="JavaLogo.png" style="width:50%" alt="Featured Photo">
+  <h2>Featured Photo</h2>
+  <img src="PortfolioBanner.png" style="width:90%" alt="Featured Photo">
 
-  <!-- Previous Projects -->
-  <div class="project-container">
-    <h3>Previous Projects</h3>
-    <div class="project-item"><img src="PartyCatch.png" style="width:100%" alt="Project 1"></div>
-    <div class="project-item"><img src="Project2.png" style="width:100%" alt="Project 2"></div>
-    <div class="project-item"><img src="Project3.png" style="width:100%" alt="Project 3"></div>
-    <div class="project-item"><img src="Project4.png" style="width:100%" alt="Project 4"></div>
+<!-- Previous Projects -->
+<div class="project-container">
+  <h3>Previous Projects</h3>
+  <div class="project-item">
+    <img src="PartyCatch.png" style="width:100%" alt="Project 1">
+    <div class="subtitle">Made an arcade game written in Java/JavaFX</div>
   </div>
-
-  <!-- Skills -->
-  <div class="skill-container">
-    <h4>Skills</h4>
-    <div class="flex-item">1</div>
+  <div class="project-item">
+    <img src="Inheritance.png" style="width:50%" alt="Project 2">
+    <div class="subtitle">A digital Bookstore App written in Java</div>
   </div>
+  <div class="project-item">
+    <img src="CLogo.png" style="width:30%" alt="Project 3">
+    <div class="subtitle">A simple concert ticket-booking app written in C</div>
+  </div>
+  <div class="project-item">
+    <img src="PythonLogo.png" style="width:30%" alt="Project 4">
+    <div class="subtitle">A simple recipe book app written in Python</div>
+  </div>
+</div>
 
-  <!-- Autobiography -->
-  <div class="autobiography-container">
-    <h5>Autobiography</h5>
-    <div class="flex-item">1</div>
+<!-- Skills -->
+<div class="skill-container">
+  <h4>Skills</h4>
+  <div class="flex-item">
+    <p>- Able to work with others / Worked on Collaborative Projects</p>
+    <p>- Knowledge coding in Python, C, Java, JavaFX</p>
+    <p>- Deep understanding in the Video Gaming Industry</p>
+  </div>
+</div>
+
+<!-- Autobiography -->
+<div class="autobiography-container">
+  <h5>Autobiography</h5>
+  <div class="flex-item">
+    <p>John Miles Ramos is currently an undergraduate at the University of the Philippines Los Baños studying for the degree of BS Computer Science.</p>
+    <p>He pursues the continued learning of programming for the future as well as an interest with Artificial Intelligence and the Video Gaming Industry. He can currently converse in English, Filipino, and simple Japanese.</p>
+    <p>Some insights include knowledge about Sony Interactive Entertainment's push for gaming in the PC platform, Microsoft's acquisition of publisher Activision Blizzard King, and an upcoming successor to the Nintendo Switch console by Nintendo.</p>
   </div>
 </div>
 
 <!-- Footer -->
 <div class="footer-container">
-  <p>Footer Contents</p>
-  <p>Logo, Address / Contact Information, and Personal Website</p>
+  <p>See the repository</p>
+  <p>https://github.com/Mairu13/Mairu13.github.io</p>
   <p>Copyright Information</p>
-  <p><strong>Back to Top</strong></p>
+  <p> C Logo: https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png </p>
+  <p> Python Logo: https://cdn.freebiesupply.com/logos/large/2x/python-5-logo-png-transparent.png </p>
+  <a class="top" id="backtop" href="#navbar">Back to top</a>
+
+  <p id="copyright"> Designed by: John Miles Ramos. Banner made with Canva</p>
 </div>
 
 </body>
