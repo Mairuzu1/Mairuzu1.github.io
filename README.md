@@ -8,6 +8,7 @@ Made by John Miles Ramos / BSCS
 
 ## To create your own: 
 Used https://pages.github.com/ as reference
+
 [1] Create a repository with your username.
 
 [2] Clone the repository to a remote or local machine.
