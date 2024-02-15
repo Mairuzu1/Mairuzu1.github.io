@@ -25,5 +25,7 @@ Used https://pages.github.com/ as reference
 
 ## Some takeaways:
 [1] I learned how to utilize the use of Flexboxes for ease of use,
+
 [2] I used Git CMD for remote access and pushing of commits.
+
 [3] I was able to deploy a webpage with the use of github pages.
