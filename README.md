@@ -1,8 +1,10 @@
+Reposted from https://github.com/Mairu13
+
 This is a single-page static website portfolio made with HTML and CSS.
 
 A requirement fulfilled for course CMSC 100
 
-**Live Website link:** https://mairu13.github.io/
+**Live Website link:** https://mairuzu1.github.io/
 
 Made by John Miles Ramos / BSCS
 
