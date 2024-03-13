@@ -1,4 +1,4 @@
-Reposted from https://github.com/Mairu13
+# Reposted from https://github.com/Mairu13
 
 This is a single-page static website portfolio made with HTML and CSS.
 
